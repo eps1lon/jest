@@ -11,14 +11,27 @@
 // Might consider extending this to other globals as well in the future
 
 module.exports = ({template}) => {
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis
+  const globalThisShimSource = `
+    var getGlobal = function () {
+      if (typeof global !== 'undefined') { return global; }
+      if (typeof window !== 'undefined') { return window; }
+      if (typeof self !== 'undefined') { return self; }
+      throw new Error('unable to locate global object');
+    };
+    var globalThisShim = getGlobal();
+  `;
   const promiseDeclaration = template(`
-    var Promise = global[Symbol.for('jest-native-promise')] || global.Promise;
+    ${globalThisShimSource}
+    var Promise = globalThisShim[Symbol.for('jest-native-promise')] || globalThisShim.Promise;
   `);
   const symbolDeclaration = template(`
-    var Symbol = global['jest-symbol-do-not-touch'] || global.Symbol;
+    ${globalThisShimSource}
+    var Symbol = globalThisShim['jest-symbol-do-not-touch'] || globalThisShim.Symbol;
   `);
   const nowDeclaration = template(`
-    var jestNow = global[Symbol.for('jest-native-now')] || global.Date.now;
+  ${globalThisShimSource}
+    var jestNow = globalThisShim[Symbol.for('jest-native-now')] || globalThisShim.Date.now;
   `);
   const fsReadFileDeclaration = template(`
     var jestReadFile = global[Symbol.for('jest-native-read-file')] || fs.readFileSync;

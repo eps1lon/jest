@@ -10881,6 +10881,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globby@npm:^13.2.1":
+  version: 13.2.1
+  resolution: "globby@npm:13.2.1"
+  dependencies:
+    dir-glob: ^3.0.1
+    fast-glob: ^3.2.11
+    ignore: ^5.2.0
+    merge2: ^1.4.1
+    slash: ^4.0.0
+  checksum: cb57ee0e00a4561e66c8aab5d15462982374632da9330d7ec95e18fe6b22afd95ed8fd701b8bbe5fb5bab2c255ca0b9d6150f68f07324ec84a825edec3c8b11d
+  languageName: node
+  linkType: hard
+
 "globrex@npm:^0.1.2":
   version: 0.1.2
   resolution: "globrex@npm:0.1.2"
@@ -13246,7 +13259,7 @@ __metadata:
     "@types/react": ^17.0.3
     clsx: ^1.1.1
     docusaurus-remark-plugin-tab-blocks: ^1.2.0
-    globby: ^11.0.1
+    globby: ^13.2.1
     graphql: ^16.3.0
     graphql-request: ^5.0.0
     js-yaml: ^4.1.0

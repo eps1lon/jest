@@ -518,6 +518,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-plugin-utils@npm:^7.24.0":
+  version: 7.24.0
+  resolution: "@babel/helper-plugin-utils@npm:7.24.0"
+  checksum: e2baa0eede34d2fa2265947042aa84d444aa48dc51e9feedea55b67fc1bc3ab051387e18b33ca7748285a6061390831ab82f8a2c767d08470b93500ec727e9b9
+  languageName: node
+  linkType: hard
+
 "@babel/helper-remap-async-to-generator@npm:^7.18.9":
   version: 7.18.9
   resolution: "@babel/helper-remap-async-to-generator@npm:7.18.9"
@@ -591,6 +598,13 @@ __metadata:
   version: 7.18.6
   resolution: "@babel/helper-validator-option@npm:7.18.6"
   checksum: f9cc6eb7cc5d759c5abf006402180f8d5e4251e9198197428a97e05d65eb2f8ae5a0ce73b1dfd2d35af41d0eb780627a64edf98a4e71f064eeeacef8de58f2cf
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-option@npm:^7.23.5":
+  version: 7.23.5
+  resolution: "@babel/helper-validator-option@npm:7.23.5"
+  checksum: 537cde2330a8aede223552510e8a13e9c1c8798afee3757995a7d4acae564124fe2bf7e7c3d90d62d3657434a74340a274b3b3b1c6f17e9a2be1f48af29cb09e
   languageName: node
   linkType: hard
 
@@ -989,6 +1003,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-flow@npm:^7.24.1":
+  version: 7.24.1
+  resolution: "@babel/plugin-syntax-flow@npm:7.24.1"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.24.0
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 87dfe32f3a3ea77941034fb2a39fdfc9ea18a994b8df40c3659a11c8787b2bc5adea029259c4eafc03cd35f11628f6533aa2a06381db7fcbe3b2cc3c2a2bb54f
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-import-assertions@npm:^7.20.0":
   version: 7.20.0
   resolution: "@babel/plugin-syntax-import-assertions@npm:7.20.0"
@@ -1266,7 +1291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-flow-strip-types@npm:^7.0.0, @babel/plugin-transform-flow-strip-types@npm:^7.18.6":
+"@babel/plugin-transform-flow-strip-types@npm:^7.0.0":
   version: 7.19.0
   resolution: "@babel/plugin-transform-flow-strip-types@npm:7.19.0"
   dependencies:
@@ -1275,6 +1300,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: c35339bf80c2a2b9abb9e2ce0382e1d9cc3ef7db2af127f4ec3d184bad2aec3269f3fcac5fdcd565439732803acad72eb9e7d5a18e439221526fdc041c9e8e1e
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-flow-strip-types@npm:^7.24.1":
+  version: 7.24.1
+  resolution: "@babel/plugin-transform-flow-strip-types@npm:7.24.1"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.24.0
+    "@babel/plugin-syntax-flow": ^7.24.1
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 83faac90c934e15a8fe813d90cbfdf8aa2cb2cc9108f55e4a1ecda1c3097735af6a0b6623057f059153b572bc1dd088aeb2ff24217e9de82ad2390ab1210d01b
   languageName: node
   linkType: hard
 
@@ -1731,15 +1768,15 @@ __metadata:
   linkType: hard
 
 "@babel/preset-flow@npm:^7.13.13, @babel/preset-flow@npm:^7.7.2":
-  version: 7.18.6
-  resolution: "@babel/preset-flow@npm:7.18.6"
+  version: 7.24.1
+  resolution: "@babel/preset-flow@npm:7.24.1"
   dependencies:
-    "@babel/helper-plugin-utils": ^7.18.6
-    "@babel/helper-validator-option": ^7.18.6
-    "@babel/plugin-transform-flow-strip-types": ^7.18.6
+    "@babel/helper-plugin-utils": ^7.24.0
+    "@babel/helper-validator-option": ^7.23.5
+    "@babel/plugin-transform-flow-strip-types": ^7.24.1
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 9100d4eab3402e6601e361a5b235e46d90cfd389c12db19e2a071e1082ca2a00c04bd47eb185ce68d8979e7c8f3e548cd5d61b86dcd701135468fb929c3aecb6
+  checksum: f1402746050a1c03af9509791bb88e90d1d56a3063374278a80b030c6d1f48a462a822a1a66826d0a631cb5424fc70bf91a25de5f7f31ff519553a3e190a0b7e
   languageName: node
   linkType: hard
 

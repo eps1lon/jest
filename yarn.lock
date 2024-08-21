@@ -4808,11 +4808,11 @@ __metadata:
   linkType: hard
 
 "@types/node-notifier@npm:^8.0.0":
-  version: 8.0.2
-  resolution: "@types/node-notifier@npm:8.0.2"
+  version: 8.0.5
+  resolution: "@types/node-notifier@npm:8.0.5"
   dependencies:
     "@types/node": "*"
-  checksum: eb380e7d6188f3883d7dce75e87f8237474074743f15977f513e25ab9d3a4def6562ee5ce26af71820ef950e32d3804af8e5edee540ada33d223f4c37e1d6528
+  checksum: ba8cec2f840f10d6daa901889ac60efedbf9608c8721384d85b4aeea3c85ba842f2ff10222cf62cf0334c4c31877aeddaf3bb1c9fb072c453c634e9a8d861753
   languageName: node
   linkType: hard
 

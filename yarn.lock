@@ -4608,9 +4608,11 @@ __metadata:
   linkType: hard
 
 "@types/fb-watchman@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "@types/fb-watchman@npm:2.0.1"
-  checksum: cf6c52a73b5958493a1e4345c43e2a0944927c3068a4155fe785dd65745760d81ac02558282fde3b713fbb777d10ede7475c1a212f0579ed34fd3d49d18b7fcd
+  version: 2.0.4
+  resolution: "@types/fb-watchman@npm:2.0.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: 7d024396d0ab6609cd5825de7cccde17a8615257417caa93ee894df48312ec2dcba773a623b4102ffc7bdc77ae85275c5673b3e884eaeb9a052721731adab41b
   languageName: node
   linkType: hard
 

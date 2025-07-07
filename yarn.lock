@@ -2675,7 +2675,7 @@ __metadata:
     "@types/node": "*"
     ansi-escapes: ^4.2.1
     chalk: ^4.0.0
-    ci-info: ^3.2.0
+    ci-info: ^4.3.0
     exit: ^0.1.2
     graceful-fs: ^4.2.9
     jest-changed-files: "workspace:^"
@@ -7062,6 +7062,13 @@ __metadata:
   version: 3.7.1
   resolution: "ci-info@npm:3.7.1"
   checksum: 72d93d5101ea1c186511277fbd8d06ae8a6e028cc2fb94361e92bf735b39c5ebd192e8d15a66ff8c4e3ed569f87c2f844e96f90e141b2de5c649f77ec34ff601
+  languageName: node
+  linkType: hard
+
+"ci-info@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "ci-info@npm:4.3.0"
+  checksum: 77a851ec826e1fbcd993e0e3ef402e6a5e499c733c475af056b7808dea9c9ede53e560ed433020489a8efea2d824fd68ca203446c9988a0bac8475210b0d4491
   languageName: node
   linkType: hard
 
@@ -12655,7 +12662,7 @@ __metadata:
     "@types/parse-json": ^4.0.0
     babel-jest: "workspace:^"
     chalk: ^4.0.0
-    ci-info: ^3.2.0
+    ci-info: ^4.3.0
     deepmerge: ^4.2.2
     glob: ^7.1.3
     graceful-fs: ^4.2.9
@@ -13164,7 +13171,7 @@ __metadata:
     "@types/node": "*"
     "@types/picomatch": ^2.2.2
     chalk: ^4.0.0
-    ci-info: ^3.2.0
+    ci-info: ^4.3.0
     graceful-fs: ^4.2.9
     picomatch: ^2.2.3
   languageName: unknown
